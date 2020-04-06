@@ -52,18 +52,18 @@ class App extends React.Component {
         return (
             // you'll have to style and structure your website here
             <div>
-                <div className="header">
+                <header>
                     <div className="logo"></div>
                     {/*or think about inserting an svg image here*/}
                     <div className="logo"></div>
-                    <h2>Test task</h2>
+                    <h3>Test task</h3>
+                </header>
+                <div>
+                    <div>Do The Task</div>
+                    <div>And Have Fun</div>
                 </div>
                 <div>
-                    <h2>Do The Task</h2>
-                    <h2>And Have Fun</h2>
-                </div>
-                <div>
-                    <h2>Be Persistent & Attentive To Details</h2>
+                    Be Persistent & Attentive To Details
                 </div>
                 <div className="card-container">
                     <CardTask
@@ -143,7 +143,7 @@ class App extends React.Component {
                     </div>
                 </div>
                 <footer>
-                    <h2>Don't Forget To Deploy Project To GitHub Pages</h2>
+                    <div>Don't Forget To Deploy Project To GitHub Pages</div>
                     <footer>
                         <div>
                             &copy; Test Task Limited<sup>TM</sup>, 2020. All

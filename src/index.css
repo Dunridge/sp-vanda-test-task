@@ -1,1 +1,284 @@
+html {
+    background: #e5e5e5;
+}
 
+header {
+    position: absolute;
+    width: 100%; /*1440px*/
+    height: 80px;
+    left: 0px;
+    top: 0px;
+
+    background: #3664d8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#root > div > div:nth-child(2) {
+    position: absolute;
+    width: 463px;
+    height: 132.08px;
+    left: 171px;
+    top: 143px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 110%;
+    /* or 64px */
+
+    display: block;
+    align-items: center;
+
+    /* 2 */
+
+    color: #212353;
+}
+
+#root > div > header > h3 {
+    position: absolute;
+    width: 121.69px;
+    height: 24.86px;
+    left: 242.45px;
+    top: 28px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20.7133px;
+    line-height: 25px;
+
+    color: #ffffff;
+}
+
+#root > div {
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+#root > div > div:nth-child(3) {
+    position: absolute;
+    width: 638px;
+    height: 84.3px;
+    left: 698px;
+    top: 262px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 110%;
+    /* or 37px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #212353;
+}
+
+#root > div > div.card-container > div:nth-child(1) {
+    position: absolute;
+    width: 485.83px;
+    height: 265px;
+    left: 117px;
+    top: 473px;
+
+    background: #ffffff;
+    box-shadow: 0px 2.84946px 28.4946px rgba(0, 0, 0, 0.25);
+    border-radius: 35.6183px;
+}
+
+#root > div > div.card-container > div:nth-child(2) {
+    position: absolute;
+    width: 682px;
+    height: 372px;
+    left: 666px;
+    top: 366px;
+
+    background: #3664d8;
+    box-shadow: 0px 4px 28.49px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+#root > div > div.reviews > h2 {
+    position: absolute;
+    width: 551px;
+    height: 47px;
+    left: 457px;
+    top: 851px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32.9px;
+    line-height: 47px;
+    /* identical to box height, or 143% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5875px;
+
+    color: #212353;
+}
+
+#root > div > div.reviews > div > div:nth-child(1) {
+    position: absolute;
+    width: 249.05px;
+    height: 293px;
+    left: 249.05px;
+    top: 0px;
+
+    /* White */
+
+    background: #ffffff;
+    border-radius: 21.975px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+#root > div > div.reviews > div {
+    position: absolute;
+    width: 805.05px;
+    height: 930px;
+    left: 317px;
+    top: 851px;
+}
+
+#root > div > div.reviews > div > div:nth-child(1) {
+    position: absolute;
+    width: 249.05px;
+    height: 293px;
+    left: 249.05px;
+    top: 0px;
+
+    /* White */
+
+    background: #ffffff;
+    border-radius: 21.975px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+#root > div > div.reviews > div > div:nth-child(2) {
+    position: absolute;
+    width: 249.05px;
+    height: 293px;
+    left: 249.05px;
+    top: 0px;
+
+    /* White */
+
+    background: #ffffff;
+    border-radius: 21.975px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+#root > div > div.reviews > div > div:nth-child(3) {
+    position: absolute;
+    width: 249.05px;
+    height: 293px;
+    left: 249.05px;
+    top: 0px;
+
+    /* White */
+
+    background: #ffffff;
+    border-radius: 21.975px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+#root > div > div.opinions > h2 {
+    /* What Other Coders Are Saying... */
+
+    position: absolute;
+    width: 654px;
+    height: 47px;
+    left: 393px;
+    top: 1338px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32.9px;
+    line-height: 47px;
+    /* identical to box height, or 143% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5875px;
+
+    color: #212353;
+}
+
+#root > div > div.opinions > div > div:nth-child(1) {
+    position: absolute;
+    left: 390px;
+    right: 390px;
+    top: 1438px;
+    bottom: 297px;
+    background: #3664d8;
+    border-radius: 75px;
+    -webkit-border-radius: 75px;
+    -moz-border-radius: 75px;
+    -ms-border-radius: 75px;
+    -o-border-radius: 75px;
+}
+
+#root > div > div.opinions > div > div:nth-child(2) {
+    position: absolute;
+    left: 390px;
+    right: 390px;
+    top: 1543px;
+    bottom: 192px;
+
+    background: #3664d8;
+    border-radius: 75px;
+}
+
+#root > div > footer > div {
+    position: absolute;
+    width: 635px;
+    height: 65px;
+    left: 403px;
+    top: 1666px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 26.3476px;
+    line-height: 110%;
+    /* or 29px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #212353;
+}
+
+#root > div > footer > footer {
+    /* © Test Task Limited™, 2020. All rights reserved. Terms Of Service | Privacy Policy */
+
+    position: absolute;
+    width: 360px;
+    height: 50px;
+    left: 540px;
+    top: 1731px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 180%;
+    /* or 22px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    /* 2 */
+
+    color: #212353;
+}
