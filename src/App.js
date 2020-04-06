@@ -4,16 +4,6 @@ import CardTask from './components/CardTask';
 import MainCard from './components/MainCard';
 import OpinionCard from './components/OpinionCard';
 
-/*
-constructor() {
-        super();
-        this.state = {
-            willWatch: false
-        };
-    }
-*/
-
-//TODO: pass arrays of details to the state --> conserve space
 //TODO: ask him whether you have to do a respnsive design
 class App extends React.Component {
     //it would have been easier to use Redux for this task
@@ -28,17 +18,11 @@ class App extends React.Component {
             mainCardTitleBold: 'Matter',
             mainCardFirstCardTitle: 'Responsive Design',
             mainCardFirstCardPrice: '$19840',
-            mainCardFirstCardRate: {
-                rate: '+8.5%',
-                upState: true,
-            },
+            mainCardFirstCardRate: '+8.5%',
             mainCardFirstCardContent: "You'll Learn A Lot From This Task",
             mainCardSecondCardTitle: 'Mobile Friendly',
             mainCardSecondCardPrice: '$12380',
-            mainCardSecondCardRate: {
-                rate: '-3.2%',
-                upState: false,
-            },
+            mainCardSecondCardRate: '-3.2%',
             mainCardSecondCardContent: "Don't Forget About Small Devices",
             // TODO: add paths for images here later on
             reviewCardFirstCardName: 'Nia',
@@ -118,26 +102,26 @@ class App extends React.Component {
                     <h2>What Pros Are Saying...</h2>
                     <div className="review-cards">
                         <Card
-                            reviewCardFirstCardName={
+                            name={
                                 this.state.reviewCardFirstCardName
                             }
-                            reviewCardFirstCardContent={
+                            content={
                                 this.state.reviewCardFirstCardContent
                             }
                         />
                         <Card
-                            reviewCardSecondCardName={
+                            name={
                                 this.state.reviewCardSecondCardName
                             }
-                            reviewCardSecondCardContent={
+                            content={
                                 this.state.reviewCardSecondCardContent
                             }
                         />
                         <Card
-                            reviewCardThirdCardName={
+                            name={
                                 this.state.reviewCardThirdCardName
                             }
-                            reviewCardThirdCardContent={
+                            content={
                                 this.state.reviewCardThirdCardContent
                             }
                         />
@@ -146,15 +130,15 @@ class App extends React.Component {
                 <div className="opinions">
                     <h2>What Other Coders Are Saying...</h2>
                     <div className="opinion-cards">
-                        <OpinionCard opinionCardFirstContent={this.state.opinionCardFirstContent}
-                                     opinionCardFirstCardName={this.state.opinionCardFirstCardName}
-                                     opinionCardFirstCardTime={this.state.opinionCardFirstCardTime}
-                                     opinionCardFirstCardStarRating={this.state.opinionCardFirstCardStarRating}
+                        <OpinionCard content={this.state.opinionCardFirstContent}
+                                     name={this.state.opinionCardFirstCardName}
+                                     time={this.state.opinionCardFirstCardTime}
+                                     rating={this.state.opinionCardFirstCardStarRating}
                          />
-                        <OpinionCard opinionCardSecondCardContent={this.state.opinionCardSecondCardContent}
-                                     opinionCardSecondCardName={this.state.opinionCardSecondCardName}
-                                     opinionCardSecondCardTime={this.state.opinionCarSecondCardTime}
-                                     opinionCardSecondCardStarRating={this.state.opinionCardSecondCardStarRating}
+                        <OpinionCard content={this.state.opinionCardSecondCardContent}
+                                     name={this.state.opinionCardSecondCardName}
+                                     time={this.state.opinionCarSecondCardTime}
+                                     rating={this.state.opinionCardSecondCardStarRating}
                          />
                     </div>
                 </div>

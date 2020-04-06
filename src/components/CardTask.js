@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
 
-const CardTask = (props) => {
+/*
+<CardTask
+                        cardTaskName={this.state.cardTaskName}
+                        cardTaskPosition={this.state.cardTaskPosition}
+                        cardTaskContent={this.state.cardTaskContent}
+                    />
+*/
+
+const CardTask = (props) => { //TODO: see how to pass images as props 
     console.log("CardTask", props);
     return ( 
         <div>
-            CardTask
+            <div>{props.cardTaskName}</div>
+            <div>{props.cardTaskPosition}</div>
+            <div>{props.cardTaskContent}</div>
         </div>
      );
 }
