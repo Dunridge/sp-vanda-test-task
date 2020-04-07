@@ -14,6 +14,7 @@ class App extends React.Component {
             cardTaskPosition: 'Head of UX Design',
             cardTaskContent:
                 '"The Style Of This Test Task Matches The Style That You Will Be Making Real Job In"',
+                cardTaskPhotoName: "card-task-profile",
             mainCardTitle: 'Fonts & Colors',
             mainCardTitleBold: 'Matter',
             mainCardFirstCardTitle: 'Responsive Design',
@@ -28,22 +29,27 @@ class App extends React.Component {
             reviewCardFirstCardName: 'Nia',
             reviewCardFirstCardContent:
                 '"This task can be perfected for students from FIT"',
+            reviewCardFirstCardPhotoName: "nia",
             reviewCardSecondCardName: 'Abigale',
             reviewCardSecondCardContent:
                 '"I am so sexy, that men are doing test tasks for me for free"',
+            reviewCardSecondCardPhotoName: "abigale",
             reviewCardThirdCardName: 'Fedya',
             reviewCardThirdCardContent: '"Kuku Epta. EZ Task"',
+            reviewCardThirdCardPhotoName: "fedya",
             //Third section
             opinionCardFirstContent:
                 'Wow, this test task is absolutely amazing! Loved it',
             opinionCardFirstCardName: 'John Kennedy',
             opinionCardFirstCardTime: '05:20',
             opinionCardFirstCardStarRating: 5,
+            opinionCardFirstCardPhotoName: "review-avatar-1",
             opinionCardSecondCardContent:
                 'Holy cow, developers rock, but I missed the 5 stars button.',
             opinionCardSecondCardName: 'Vasiliy Igorsky',
             opinionCardSecondCardTime: '14:30',
             opinionCardSecondCardStarRating: 4,
+            opinionCardSecondCardPhotoName: "review-avatar-2"
         };
     }
 
@@ -70,6 +76,7 @@ class App extends React.Component {
                         cardTaskName={this.state.cardTaskName}
                         cardTaskPosition={this.state.cardTaskPosition}
                         cardTaskContent={this.state.cardTaskContent}
+                        photoname={this.state.cardTaskPhotoName}
                     />
                     <MainCard
                         mainCardTitle={this.state.mainCardTitle}
@@ -108,6 +115,8 @@ class App extends React.Component {
                             content={
                                 this.state.reviewCardFirstCardContent
                             }
+
+                            photoname = {this.state.reviewCardFirstCardPhotoName}
                         />
                         <Card
                             name={
@@ -116,6 +125,7 @@ class App extends React.Component {
                             content={
                                 this.state.reviewCardSecondCardContent
                             }
+                            photoname = {this.state.reviewCardSecondCardPhotoName}
                         />
                         <Card
                             name={
@@ -124,6 +134,7 @@ class App extends React.Component {
                             content={
                                 this.state.reviewCardThirdCardContent
                             }
+                            photoname = {this.state.reviewCardThirdCardPhotoName}
                         />
                     </div>
                 </div>
@@ -134,11 +145,13 @@ class App extends React.Component {
                                      name={this.state.opinionCardFirstCardName}
                                      time={this.state.opinionCardFirstCardTime}
                                      rating={this.state.opinionCardFirstCardStarRating}
+                                     photoname={this.state.opinionCardFirstCardPhotoName}
                          />
                         <OpinionCard content={this.state.opinionCardSecondCardContent}
                                      name={this.state.opinionCardSecondCardName}
                                      time={this.state.opinionCarSecondCardTime}
                                      rating={this.state.opinionCardSecondCardStarRating}
+                                     photoname={this.state.opinionCardSecondCardPhotoName}
                          />
                     </div>
                 </div>

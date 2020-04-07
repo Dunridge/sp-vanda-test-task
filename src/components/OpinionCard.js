@@ -5,7 +5,7 @@ const OpinionCard = (props) => {
     
     return ( 
         <div>
-            {/* pass image here */}
+            <img src={require('../img/' + props.photoname.toLowerCase() + '.png')} alt=""/>
             <div>{props.content}</div>
             <div>{props.name}</div>
             <div>{props.time}</div>

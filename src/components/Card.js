@@ -14,7 +14,8 @@ const Card = (props) => { // see how to pass images as props in https://stackove
     */
     return (  
         <div className="card">
-            {/* TODO: pass image here */}
+        
+            <img src={require('../img/' + props.photoname.toLowerCase() + '.png')} alt=""/>
             <div>{props.name}</div>
             <div>{props.content}</div>
         </div>
