@@ -149,7 +149,7 @@ class App extends React.Component {
                          />
                         <OpinionCard content={this.state.opinionCardSecondCardContent}
                                      name={this.state.opinionCardSecondCardName}
-                                     time={this.state.opinionCarSecondCardTime}
+                                     time={this.state.opinionCardSecondCardTime}
                                      rating={this.state.opinionCardSecondCardStarRating}
                                      photoname={this.state.opinionCardSecondCardPhotoName}
                          />

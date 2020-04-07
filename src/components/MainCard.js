@@ -8,8 +8,8 @@ const MainCard = (props) => {
     return (
         <div>
             <div className="title">
-                <div>{props.mainCardTitle}</div>
-                <div>{props.mainCardTitleBold}</div>
+                <div>{props.mainCardTitle}<br/>
+                {props.mainCardTitleBold}</div> 
             </div>
 
             <div className="card-container">

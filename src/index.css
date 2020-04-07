@@ -94,10 +94,9 @@ header {
 }
 
 #root > div > div.card-container > div:nth-child(1) > div:nth-child(1) {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: row;
 }
-
 
 /* ------------------------------ */
 
@@ -197,14 +196,17 @@ header {
 
 #root > div > div.opinions > div > div:nth-child(1) {
     /*position: absolute;
-    *//*left: 390px;
-    */right: 390px;
+    */ /*left: 390px;
+    */
+    right: 390px;
     /*top: 1438px;
-    */width: 580px;
+    */
+    width: 580px;
     height: 75px;
     margin-left: -4%;
     /*margin-right: 95%;
-    */bottom: 297px;
+    */
+    bottom: 297px;
     background: #3664d8;
     border-radius: 75px;
     -webkit-border-radius: 75px;
@@ -391,9 +393,133 @@ header {
 }
 
 #root > div > footer > div {
-  left: 27%;
+    left: 27%;
 }
 
 #root > div > footer > footer {
-  left: 31%;
+    left: 31%;
 }
+
+/* styling cards */
+#root > div > div.reviews > div > div:nth-child(1) > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#root > div > div.reviews > div > div:nth-child(2) > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#root > div > div.reviews > div > div:nth-child(3) > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* ------ */
+
+/*styling the main card*/
+#root
+    > div
+    > div.card-container
+    > div:nth-child(2)
+    > div.card-container
+    > div:nth-child(1) {
+    position: absolute;
+    left: 50.35%;
+    right: 32.24%;
+    top: 29.7%;
+    bottom: 63.74%;
+
+    background: #ffffff;
+    border-radius: 19.8652px;
+}
+
+#root
+    > div
+    > div.card-container
+    > div:nth-child(2)
+    > div.card-container
+    > div:nth-child(2) {
+    position: absolute;
+    left: 71.94%;
+    right: 10.64%;
+    top: 24.35%;
+    bottom: 68.58%;
+
+    background: #ffffff;
+    border-radius: 19.8652px;
+}
+
+#root > div > div.card-container > div:nth-child(2) > div.title > div {
+  margin-top: 8%;
+  margin-left: 8%;
+}
+
+#root > div > div.card-container > div:nth-child(2) > div.card-container > div:nth-child(1) {
+
+}
+
+#root > div > div.card-container > div:nth-child(2) > div.card-container > div:nth-child(2) {
+  /* margin-top: 76px;
+  margin-left: 10px; */
+}
+
+/*---------------------*/
+
+#root > div > div.card-container > div:nth-child(1) > div:nth-child(1) > img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 20px;
+}
+
+#root > div > div.reviews > div > div:nth-child(1) > div:nth-child(1) > img {
+  margin-top: 20px;
+}
+
+#root > div > div.reviews > div > div:nth-child(2) > div:nth-child(1) > img {
+  margin-top: 20px;
+}
+
+#root > div > div.reviews > div > div:nth-child(3) > div:nth-child(1) > img {
+  margin-top: 20px;
+}
+
+#root > div > div.opinions > div > div:nth-child(1) > img {
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+#root > div > div.opinions > div > div:nth-child(2) > img {
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+/*styling opinions*/
+#root > div > div.opinions > div > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+}
+
+#root > div > div.opinions > div > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+}
+
+#root > div > div.opinions > div > div:nth-child(1) > div {
+  display: flex;
+  flex-direction: row;
+}
+
+#root > div > div.opinions > div > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: row;
+}
+/* --------------- */
