@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import drawStars from '../helpers/drawStars';
 
 const OpinionCard = (props) => {
     console.log('Opinion card', props);
@@ -18,7 +19,9 @@ const OpinionCard = (props) => {
                 </div>
                 <div className="time-rating">
                     <div>{props.time}</div>
-                    <div>{props.rating}</div>
+                    <div>{
+                        drawStars(props.rating)
+                        }</div>
                 </div>
             </div>
         </div>
