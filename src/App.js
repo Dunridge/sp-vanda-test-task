@@ -61,8 +61,9 @@ class App extends React.Component {
             // you'll have to style and structure your website here
             <div>
                 <header>
+
                     <div className="emblem">
-                        <img src={EmblemSmallerStick} alt="" />
+                        <img src={EmblemSmallerStick} alt="small emblem" />
                         <img src={EmblemBiggerStick} alt="" />
                     </div>
 
