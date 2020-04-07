@@ -799,6 +799,92 @@ header {
     justify-content: start;
 }
 
-/*Now you have to make it adaptive*/
+#root > div > div.reviews > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+    margin: 10px;
+}
 
-/*--------------*/
+#root > div > div.reviews > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
+    margin: 10px;
+}
+
+/*Now you have to make it adaptive*/
+/*Phone width wasn't specified so I'll take 600px as the standard phone width*/
+/* TODO: use grid areas */
+/* This doesn't work:   */
+@media only screen and (max-width: 600px) {
+    /* #root > div > div:nth-child(2) > div:nth-child(1) {
+        color: red;
+    } test, your responsive website is working...*/
+    #root > div > div.card-container {
+        all: initial;
+        all: unset;
+    }
+    #root > div > div.card-container {
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 10px;
+        max-width: 600px;
+        margin: 0 auto;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4";
+    }
+    
+    #root > div > div:nth-child(2) {
+        grid-area: a1;
+    }
+
+    #root > div > div:nth-child(3) {
+        grid-area: a2;
+    }
+
+    #root > div > div.card-container > div:nth-child(1) {
+        grid-area: a3;
+    }
+
+    #root > div > div.card-container > div:nth-child(2) {
+        grid-area: a4;
+    }
+
+
+    /* FOR THE NEXT GRID AREA: */
+
+    #root > div > div.reviews > h2 {
+        grid-area: a4;
+    }
+
+    #root > div > div.reviews > div > div:nth-child(1) {
+        grid-area: a5;
+    }
+
+    #root > div > div.reviews > div > div:nth-child(2) {
+        grid-area: a6;
+    }
+
+    #root > div > div.reviews > div > div:nth-child(3) {
+        grid-area: a7;
+    }
+
+    #root > div > div.opinions > h2 {
+        grid-area: a8;
+    }
+
+    #root > div > div.opinions > div > div:nth-child(1) {
+        grid-area: a9;
+    }
+
+    #root > div > div.opinions > div > div:nth-child(2) {
+        grid-area: a10;
+    }
+
+    #root > div > footer > div {
+        grid-area: a11;
+    }
+
+    #root > div > footer > footer {
+        grid-area: a12;
+    }
+  }
+/**/

@@ -8,11 +8,11 @@ const drawStars = (numOfStars) => {
     const emptyStarArray = [];
     const filledStarArray= [];
     for (let i = 0; i < numOfStars; i++) {
-        filledStarArray.push(<img src={FilledStar} />);
+        filledStarArray.push(<img src={FilledStar} key={i}/>);
         // <img src={FilledStar} />
     }
     for (let i = 0; i < 5 - filledStarArray.length; i++) {
-        emptyStarArray.push(<img src={EmptyStar} />);
+        emptyStarArray.push(<img src={EmptyStar} key={100 - i}/>);
         // // <img src={EmptyStar} />
     }
     const resultArray = [...filledStarArray, ...emptyStarArray];
