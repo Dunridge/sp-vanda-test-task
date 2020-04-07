@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sp-vanda-test-task/precache-manifest.6fc126a4be4ba560884d4919ef5f0111.js"
+  "/sp-vanda-test-task/precache-manifest.37132a0ff6022f11db0cea60e29d5b8c.js"
 );
 
 self.addEventListener('message', (event) => {
